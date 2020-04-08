@@ -22,10 +22,19 @@ int main(int argc, char *argv[])
     print(std::cout, "Hello World!!");
 
     Calculator calc;
-    std::stringstream ss;
+    {
+	    std::stringstream ss;
 
-    ss << "4+5=" << calc.add(4, 5);
-	print(std::cout, ss.str());
+	    ss << "4+5=" << calc.add(4, 5);
+		print(std::cout, ss.str());
+	}
+
+	{
+	    std::stringstream ss;
+
+	    ss << "4-5=" << calc.subtract(4, 5);
+		print(std::cout, ss.str());
+	}
 
 
     return 0;
