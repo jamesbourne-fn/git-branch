@@ -12,7 +12,6 @@ public:
 	 */
 	int add(int lhs, int rhs);	
 
-}
-
+};
 
 #endif

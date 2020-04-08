@@ -1,5 +1,7 @@
 #include <iostream>
+#include <sstream>
 #include <string>
+#include "Calculator.h"
 
 /**
  * This is a utility method to print to output
@@ -18,5 +20,13 @@ void print(std::ostream& os, std::string msg)
 int main(int argc, char *argv[]) 
 {
     print(std::cout, "Hello World!!");
+
+    Calculator calc;
+    std::stringstream ss;
+
+    ss << "4+5=" << calc.add(4, 5);
+	print(std::cout, ss.str());
+
+
     return 0;
 }
