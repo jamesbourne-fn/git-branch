@@ -1,0 +1,18 @@
+{
+ "profile": "[settings]\narch=x86_64\narch_build=x86_64\nbuild_type=Release\ncompiler=gcc\ncompiler.libcxx=libstdc++\ncompiler.version=4.8\nos=Linux\nos_build=Linux\n[options]\n[build_requires]\n[env]\n", 
+ "graph_lock": {
+  "nodes": {
+   "c88024c8-5169-11ea-bb1d-080027ed29ec": {
+    "pref": "None/None@jab/testing:50125cfdf50394ce3618846004e88c7bfabe65a0", 
+    "requires": {
+     "MyTestConanPackage/1.2.5@jab/testing#7a1a2bf4b4377f890a3793f8aa5aa611": "c8801f78-5169-11ea-bb1d-080027ed29ec"
+    }, 
+    "options": "MyTestConanPackage:shared=False"
+   }, 
+   "c8801f78-5169-11ea-bb1d-080027ed29ec": {
+    "pref": "MyTestConanPackage/1.2.5@jab/testing#7a1a2bf4b4377f890a3793f8aa5aa611:de9c231f84c85def9df09875e1785a1319fa8cb6#1bc81b9468ae1c67f09083736cf2f867", 
+    "options": "shared=False"
+   }
+  }
+ }
+}

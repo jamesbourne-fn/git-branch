@@ -1,0 +1,14 @@
+{
+ "root": {
+  "version": null, 
+  "name": null, 
+  "channel": "testing", 
+  "user": "jab"
+ }, 
+ "options": [
+  [
+   "MyTestConanPackage:shared", 
+   "False"
+  ]
+ ]
+}
