@@ -3,6 +3,17 @@
 #include <string>
 
 /**
+ * This is a utility subract method
+ * @param lhs The lhs value to subtract from
+ * @param rhs The rhs value to subtract
+ * @return The result of the subtract 
+ */
+int subtract(int lhs, int rhs)
+{
+    return lhs - rhs;  
+}
+
+/**
  * This is a utility add method
  * @param lhs The lhs value to add
  * @param rhs The rhs value to add
@@ -31,10 +42,19 @@ int main(int argc, char *argv[])
 {
     print(std::cout, "Hello World!!");
 
-    std::stringstream ss;
+    {
+	    std::stringstream ss;
 
-    ss << "4+5=" << add(4, 5);
-	print(std::cout, ss.str());
+	    ss << "4+5=" << add(4, 5);
+		print(std::cout, ss.str());
+	}
+
+	{
+		std::stringstream ss;
+
+	    ss << "4+5=" << subtract(4, 5);
+		print(std::cout, ss.str());
+	}
 
     return 0;
 }
